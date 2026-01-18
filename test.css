@@ -1,0 +1,42 @@
+body {
+  color: rgb(4, 68, 47);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  background-color: aquamarine;
+}
+
+h1{
+  text-align: center;
+}
+.container {
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+
+/* * {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  flex-basis: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+  border: 2px solid yellow;
+  margin: 10px;
+}
+
+.item:nth-child(2) {
+  background-color: blue;
+  flex-grow: 1;
+  order: 4;
+} */
