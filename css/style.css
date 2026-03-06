@@ -231,6 +231,7 @@ address {
   display: flex;
   gap: 30px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .chief-card {
@@ -262,11 +263,16 @@ address {
  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-primary-normal);
 }
 /* Format-section */
-
+.formats-container{
+  display:flex;
+  gap:32px;
+  align-items: center;
+}
 .format-list {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
 }
 .format-card {
   padding: 24px;
@@ -278,19 +284,21 @@ address {
   );
   border: 1px solid gray;
   border-radius: 16px;
+  height: 444px;
+  width: 100%;
+  max-width: 349px;
 }
 
 .formats-title {
   margin-bottom: 80px;
 }
-.format-title {
+.format-title {  
   font-size: 24px;
   font-weight: 600;
 }
 
 .format-item {
-  flex-basis: calc(100% -40px / 3);
-  flex-wrap: wrap;
+  flex-basis: calc((100% - 40px) / 3);
 }
 .format-text {
   font-size: 14px;
@@ -299,6 +307,7 @@ address {
 
 .slider-button{
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -316,35 +325,74 @@ address {
 }
 
 /* Join section */
+.join-section{
+  padding-bottom: 96px;
+}
+.join-container{
+  display:flex;
+  gap:32px;
+  flex-shrink: 0;
+}
 
 .join-title {
   margin-bottom: 16px;
 }
 
-/* Adress section */
-
-.footer-container {
+.join-map{
+  width: 100%;
+  max-width: 590px;
+  border-radius: 5%;
+}
+/* Footer section */
+.footer {
   background-image: url("../img/footer-bg.png");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--color-primary-dark);
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0;
+}
+
+.footer-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-brand-normal);
+}
+
 .address-link {
   color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 300;
 }
 
 .address-link:hover {
   color: var(--color-brand-normal);
 }
-
-.adress-icon{
-  fill:var(--color-primary-light);
+.footer-social {
+  gap: 12px;
+  margin-top: 8px;
 }
+
+.adress-icon {
+  fill: var(--color-primary-light);
+}
+
+.footer-column{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
 
 .address-copyright {
   font-size: 14px;
+  color: var(--color-brand-light);
 }
